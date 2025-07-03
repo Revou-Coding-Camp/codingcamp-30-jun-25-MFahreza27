@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Mini Project | Mochamad Fahreza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+  <!-- Navbar -->
+  <div class="hidden lg:flex fixed top-1/2 right-0 -translate-y-1/2 z-50 group">
+    <div class="bg-black/60 backdrop-blur-lg rounded-l-xl border border-white/10 shadow-lg overflow-hidden">
+      <ul class="space-y-6 py-6 pl-2 pr-3 group-hover:pl-4 group-hover:pr-6 transition-all duration-300 w-14 group-hover:w-48">
+
+        <!-- Home -->
+        <li class="flex items-center space-x-3 text-white hover:text-gray-300 transition-all duration-300">
+          <iconify-icon icon="heroicons:home-solid" class="w-6 h-6 pl-2 flex-shrink-0"></iconify-icon>
+          <a href="#home" class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">HOME</a>
+        </li>
+
+        <!-- Profile -->
+        <li class="flex items-center space-x-3 text-white hover:text-gray-300 transition-all duration-300">
+          <iconify-icon icon="heroicons:user-solid" class="w-6 h-6 pl-2 flex-shrink-0"></iconify-icon>
+          <a href="#profile" class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">PROFILE</a>
+        </li>
+
+        <!-- Portfolio -->
+        <li class="flex items-center space-x-3 text-white hover:text-gray-300 transition-all duration-300">
+          <iconify-icon icon="heroicons:briefcase-solid" class="w-6 h-6 pl-2 flex-shrink-0"></iconify-icon>
+          <a href="#portfolio" class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">PORTOFOLIO</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="flex items-center space-x-3 text-white hover:text-gray-300 transition-all duration-300">
+          <iconify-icon icon="heroicons:map-pin-solid" class="w-6 h-6 pl-2 flex-shrink-0"></iconify-icon>
+          <a href="#contact" class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">CONTACT</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+    <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-lg border-t border-white/10">
+    <div class="flex justify-around items-center py-3">
+      <a href="#home" class="flex flex-col items-center text-white hover:text-gray-300">
+        <iconify-icon icon="heroicons:home-solid" class="w-6 h-6 mb-1 pl-1"></iconify-icon>
+        <span class="text-xs">Home</span>
+      </a>
+      <a href="#profile" class="flex flex-col items-center text-white hover:text-gray-300">
+        <iconify-icon icon="heroicons:user-solid" class="w-6 h-6 mb-1 pl-1"></iconify-icon>
+        <span class="text-xs">Profile</span>
+      </a>
+      <a href="#portfolio" class="flex flex-col items-center text-white hover:text-gray-300">
+        <iconify-icon icon="heroicons:briefcase-solid" class="w-6 h-6 mb-1 pl-1"></iconify-icon>
+        <span class="text-xs">Portfolio</span>
+      </a>
+      <a href="#contact" class="flex flex-col items-center text-white hover:text-gray-300">
+        <iconify-icon icon="heroicons:map-pin-solid" class="w-6 h-6 mb-1 pl-1"></iconify-icon>
+        <span class="text-xs">Contact</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Home -->
+  <section id="home" class="hero min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
+    <div class="hero-content text-center">
+      <div class="max-w-4xl">
+        <h1 class="text-5xl md:text-7xl font-black mb-6">
+          Hello, <span id="username" class="gradient-text"></span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-gray-300">Selamat Datang Di Portofolio Saya</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 </html>
