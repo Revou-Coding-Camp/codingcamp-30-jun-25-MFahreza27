@@ -160,6 +160,70 @@
     </div>
   </section>
 
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-black">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-black text-center mb-16 gradient-text">CONTACT</h2>
+      <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div class="card bg-gray-900 border border-white/10">
+          <div class="card-body p-8">
+            <h3 class="text-2xl font-bold mb-6 border-b border-white/20 pb-2">Pesan</h3>
+            <form id="contactForm" class="space-y-6">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-white font-bold">Nama</span>
+                </label>
+                <input id="nama" type="text" class="input input-bordered bg-black border-white/20 text-white focus:border-white" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-white font-bold">Tanggal Lahir</span>
+                </label>
+                <input id="tanggal" type="date" class="input input-bordered bg-black border-white/20 text-white focus:border-white" required />
+              </div>
+
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-white font-bold">Jenis Kelamin</span>
+                </label>
+                <div class="flex space-x-6">
+                  <label class="cursor-pointer label">
+                    <input type="radio" name="jk" value="Laki-Laki" class="radio radio-white" required />
+                    <span class="label-text text-white ml-2">Laki-Laki</span>
+                  </label>
+                  <label class="cursor-pointer label">
+                    <input type="radio" name="jk" value="Perempuan" class="radio radio-white" />
+                    <span class="label-text text-white ml-2">Perempuan</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-white font-bold">Pesan</span>
+                </label>
+                <textarea id="pesan" rows="4" class="textarea textarea-bordered bg-black border-white/20 text-white focus:border-white" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-outline btn-block border-white text-white hover:bg-white hover:text-black">
+                Kirim Pesan
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="card bg-gray-900 border border-white/10">
+          <div class="card-body p-8">
+            <h3 class="text-2xl font-bold mb-6 border-b border-white/20 pb-2">Output</h3>
+            <div id="output" class="bg-black/50 p-6 rounded-lg border border-white/10 min-h-64">
+              <p class="text-gray-500 text-center">Ini Output</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="js/script.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
