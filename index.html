@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" data-theme="black">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Project | Mochamad Fahreza</title>
+    <title>Mini Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.css">
@@ -42,7 +42,7 @@
     </div>
   </div>
 
-    <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-lg border-t border-white/10">
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-lg border-t border-white/10">
     <div class="flex justify-around items-center py-3">
       <a href="#home" class="flex flex-col items-center text-white hover:text-gray-300">
         <iconify-icon icon="heroicons:home-solid" class="w-6 h-6 mb-1 pl-1"></iconify-icon>
@@ -68,9 +68,94 @@
     <div class="hero-content text-center">
       <div class="max-w-4xl">
         <h1 class="text-5xl md:text-7xl font-black mb-6">
-          Hello, <span id="username" class="gradient-text"></span>
+          Hello, <span id="username" class="gradient-text">User</span>
         </h1>
         <p class="text-xl md:text-2xl mb-8 text-gray-300">Selamat Datang Di Portofolio Saya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section id="profile" class="py-20 bg-black">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-black text-center mb-16 gradient-text">PROFILE</h2>
+      <div class="card bg-gray-900 border border-white/10 max-w-4xl mx-auto">
+        <div class="card-body p-8 md:p-12">
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+              <div>
+                <h3 class="text-2xl font-bold mb-4 border-b border-white/20 pb-2">Tentang Saya</h3>
+                <p class="text-gray-300 leading-relaxed">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, incidunt.
+                </p>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold mb-4 border-b border-white/20 pb-2">Visi & Misi</h3>
+                <p class="text-gray-300 leading-relaxed">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, accusamus.
+                </p>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <h3 class="text-2xl font-bold mb-6 border-b border-white/20 pb-2">Pendidikan</h3>
+              <div class="space-y-4">
+                <div class="glass-card p-4 rounded-lg">
+                  <h4 class="font-bold text-white mb-2">S1 Teknik Informatika</h4>
+                  <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nesciunt.</p>
+                </div>
+                <div class="glass-card p-4 rounded-lg">
+                  <h4 class="font-bold text-white mb-2">Mipa</h4>
+                  <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, dolorem.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-black text-center mb-16 gradient-text">PORTOFOLIO</h2> 
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="card bg-black border border-white/10 hover:border-white/30 transition-all duration-300">
+          <div class="card-body p-6">
+            <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl font-black">A</span>
+            </div>
+            <h3 class="card-title text-xl font-black mb-3">Project Alpha</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, molestiae.
+            </p>
+            <div class="badge badge-outline text-xs">Laravel | Php</div>
+          </div>
+        </div>
+        <div class="card bg-black border border-white/10 hover:border-white/30 transition-all duration-300">
+          <div class="card-body p-6">
+            <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl font-black">B</span>
+            </div>
+            <h3 class="card-title text-xl font-black mb-3">Project Beta</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quo.
+            </p>
+            <div class="badge badge-outline text-xs">Django | Python</div>
+          </div>
+        </div>
+        <div class="card bg-black border border-white/10 hover:border-white/30 transition-all duration-300">
+          <div class="card-body p-6">
+            <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl font-black">G</span>
+            </div>
+            <h3 class="card-title text-xl font-black mb-3">Project Gamma</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, natus!
+            </p>
+            <div class="badge badge-outline text-xs">React | Js</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
